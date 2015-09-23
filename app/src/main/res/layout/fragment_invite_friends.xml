@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/fragment_padding_left"
+    android:paddingRight="@dimen/fragment_padding_right"
+    android:paddingTop="@dimen/fragment_padding_top"
+    android:padding="@dimen/fragment_padding_bottom">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum attendees"
+                    android:id="@+id/textView15" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:text="0"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="4dp"
+                    android:ems="1"
+                    android:id="@+id/editText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="people"
+                    android:id="@+id/textView16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Charge per person"
+                    android:layout_weight="1"
+                    android:id="@+id/textView17" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="harganya berapa"
+                    android:layout_weight="1"
+                    android:id="@+id/pricePerPersonTextView" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite Friends"
+                android:layout_marginTop="30dp"
+                android:id="@+id/textView19" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mr X"
+                android:id="@+id/butonFriends"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mr.x@wokeh.com"
+                android:id="@+id/button15"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inviteFriendsEditText"
+                android:hint="Friends' name or email"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cant_find_friend_text"
+                android:id="@+id/textView20" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INVITE"
+                android:id="@+id/button16"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

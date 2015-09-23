@@ -19,7 +19,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.boca.boca.fragment.ConfirmationFragment;
+import com.boca.boca.fragment.InviteFriendsFragment;
 import com.boca.boca.fragment.LoginFragment;
+import com.boca.boca.fragment.PaymentFragment;
+import com.boca.boca.fragment.RegisterFragment;
+import com.boca.boca.fragment.SelectFieldFragment;
 
 
 public class MainActivity extends ActionBarActivity
@@ -58,19 +63,43 @@ public class MainActivity extends ActionBarActivity
             case 0: fragmentManager.beginTransaction().replace(R.id.container, new LoginFragment())
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE).commit();
                 break;
+            case 1: fragmentManager.beginTransaction().replace(R.id.container, new RegisterFragment())
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE).commit();
+                break;
+            case 2: fragmentManager.beginTransaction().replace(R.id.container, new SelectFieldFragment())
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE).commit();
+                break;
+            case 3: fragmentManager.beginTransaction().replace(R.id.container, new PaymentFragment())
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE).commit();
+                break;
+            case 4: fragmentManager.beginTransaction().replace(R.id.container, new InviteFriendsFragment())
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE).commit();
+                break;
+            case 5: fragmentManager.beginTransaction().replace(R.id.container, new ConfirmationFragment())
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE).commit();
+                break;
         }
     }
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = "Login";
+                mTitle = getString(R.string.title_section1);
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                break;
+            case 4:
+                mTitle = getString(R.string.title_section4);
+                break;
+            case 5:
+                mTitle = getString(R.string.title_section5);
+                break;
+            case 6:
+                mTitle = getString(R.string.title_section6);
                 break;
         }
     }

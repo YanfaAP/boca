@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/fragment_padding_left"
+    android:paddingRight="@dimen/fragment_padding_right"
+    android:paddingTop="@dimen/fragment_padding_top"
+    android:padding="@dimen/fragment_padding_bottom">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullNameEditText"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="nama lengkap"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Write your full name so your friends can identify you"
+                android:paddingLeft="7dp"
+                android:textSize="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="email address"
+                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:id="@+id/emailEditText"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verification email will be sent to this email address"
+                android:paddingLeft="7dp"
+                android:textSize="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/textView5" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="8"
+                android:hint="password"
+                android:id="@+id/passwordEditText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password should be 8 characters or more"
+                android:paddingLeft="7dp"
+                android:textSize="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="confirm password"
+                android:ems="8"
+                android:id="@+id/confirmPassEditText"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retype your password"
+                android:paddingLeft="7dp"
+                android:textSize="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/textView9" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By creating an account, you agree to Boca's "
+                    android:textSize="10dp"
+                    android:paddingLeft="7dp"
+                    android:id="@+id/textView7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/term_of_service"
+                    android:textSize="10dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:clickable="true"
+                    android:id="@+id/textView8" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:id="@+id/signUpButton"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
